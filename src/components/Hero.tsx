@@ -10,7 +10,7 @@ import {
   MessageCircle,
   MapPin,
   Sparkles,
-  Code2
+  Code2,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./SocialIcons";
 
@@ -35,7 +35,6 @@ export const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
           {/* Left Column: Text & Intro */}
           <div className="lg:col-span-7 space-y-6 text-left">
             {/* Availability Badge */}
@@ -95,9 +94,10 @@ export const Hero = () => {
 
               <a
                 href="/resume.pdf"
-                download="Mehedi_Hasan_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-transparent text-cyan-400 hover:bg-cyan-500/10 border border-cyan-500/30 transition-all"
-                title="Download Mehedi's Resume (PDF)"
+                title="View Mehedi's Resume (PDF)"
               >
                 <Download className="w-4 h-4" />
                 <span>Resume</span>
@@ -175,12 +175,17 @@ export const Hero = () => {
                           <Code2 className="w-10 h-10 text-cyan-400" />
                         </div>
                       </div>
-                      <h3 className="text-lg font-bold text-white mb-1">Mehedi Hasan</h3>
+                      <h3 className="text-lg font-bold text-white mb-1">
+                        Mehedi Hasan
+                      </h3>
                       <p className="text-xs text-cyan-400 font-medium mb-3">
                         Full-Stack Web Developer
                       </p>
                       <p className="text-[11px] text-slate-400 max-w-[200px] leading-relaxed">
-                        Drop your photo into <code className="text-cyan-300">/public/images/profile.png</code>
+                        Drop your photo into{" "}
+                        <code className="text-cyan-300">
+                          /public/images/profile.png
+                        </code>
                       </p>
                     </div>
                   )}
@@ -199,7 +204,9 @@ export const Hero = () => {
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <div>
-                      <p className="text-[11px] font-medium text-slate-400">Focus</p>
+                      <p className="text-[11px] font-medium text-slate-400">
+                        Focus
+                      </p>
                       <p className="text-xs font-bold text-white dark:text-white light:text-slate-900">
                         Next.js &amp; Full-Stack
                       </p>
@@ -208,8 +215,10 @@ export const Hero = () => {
 
                   <a
                     href="/resume.pdf"
-                    download="Mehedi_Hasan_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 text-xs font-semibold border border-cyan-500/30 transition-colors"
+                    title="View Mehedi's Resume (PDF)"
                   >
                     <span>Resume</span>
                     <Download className="w-3 h-3" />
@@ -218,7 +227,6 @@ export const Hero = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
