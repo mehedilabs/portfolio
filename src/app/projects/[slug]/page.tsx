@@ -16,7 +16,7 @@ import {
   Calendar,
   UserCheck,
   Tag,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import { GithubIcon } from "@/components/SocialIcons";
 
@@ -32,7 +32,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const project = projectsData.find((p) => p.slug === slug);
 
@@ -77,7 +79,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       <main className="flex-1 pt-28 pb-20 bg-grid-tech">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
           {/* Back Navigation & Breadcrumb */}
           <div className="flex items-center justify-between">
             <Link
@@ -186,7 +187,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             </h2>
             <div className="p-6 sm:p-8 rounded-2xl bg-[#0b0f19] dark:bg-[#0b0f19] light:bg-white border border-white/10 dark:border-white/10 light:border-slate-200 space-y-3">
               {project.overview.map((paragraph, index) => (
-                <p key={index} className="text-sm sm:text-base text-slate-300 dark:text-slate-300 light:text-slate-700 leading-relaxed">
+                <p
+                  key={index}
+                  className="text-sm sm:text-base text-slate-300 dark:text-slate-300 light:text-slate-700 leading-relaxed"
+                >
                   {paragraph}
                 </p>
               ))}
@@ -322,7 +326,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               </span>
             </Link>
           </div>
-
         </div>
       </main>
 

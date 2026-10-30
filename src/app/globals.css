@@ -81,3 +81,21 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #06b6d4;
 }
+@keyframes assistantPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.assistant-pulse {
+  animation: assistantPulse 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .assistant-pulse {
+    animation: none;
+  }
+}

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { AssistantWidget } from "@/components/AssistantWidget";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -39,7 +40,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark scroll-smooth">
       <body className="min-h-screen antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+          <AssistantWidget />
+        </ThemeProvider>
       </body>
     </html>
   );
