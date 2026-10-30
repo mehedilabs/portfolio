@@ -327,3 +327,4 @@ export const navigationLinks = [
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" }
 ];
+
