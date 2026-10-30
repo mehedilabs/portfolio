@@ -115,7 +115,7 @@ export const projectsData: Project[] = [
       "Live Weather is a sleek web application built to offer instantaneous weather conditions, temperature readouts, atmospheric pressure, humidity, wind velocity, and multi-day forecasts for global locations. Designed with a mobile-first philosophy, it combines clean typography and visual condition indicators to deliver weather data with clarity and speed.",
     image: "/images/projects/live-weather.jpg",
     liveUrl: "https://live-weather-sky.vercel.app/",
-    githubUrl: "https://github.com/your-username/live-weather", // User can easily update
+    githubUrl: "https://github.com/mehedilabs/live-weather", // User can easily update
     tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Weather API", "Responsive"],
     role: "Lead Frontend Developer & UI Designer",
     duration: "2024",
@@ -166,7 +166,7 @@ export const projectsData: Project[] = [
       "Bazar Dor is an intuitive market analytics platform tailored to help everyday consumers and households track daily market rates of essential groceries, vegetables, fish, meat, and dry goods. The application focuses on data clarity, clean categorizations, and rapid search to keep buyers informed before visiting the local market.",
     image: "/images/projects/bazar-dor.jpg",
     liveUrl: "https://bazar-dor-delta.vercel.app/",
-    githubUrl: "https://github.com/your-username/bazar-dor", // User can easily update
+    githubUrl: "https://github.com/mehedilabs/bazar-dor", // User can easily update
     tags: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Data Visualization", "Marketplace"],
     role: "Full-Stack Developer",
     duration: "2024",
@@ -216,7 +216,7 @@ export const projectsData: Project[] = [
       "Bangla News 24 is a comprehensive digital journalism portal designed to present breaking news, national affairs, technology, sports, and editorial features in Bengali script. Built with high editorial standards, the platform emphasizes reading comfort, responsive media embeds, categorized content curation, and rapid navigation across news desks.",
     image: "/images/projects/bangla-news-24.jpg",
     liveUrl: "https://news-bangla-24-one.vercel.app/",
-    githubUrl: "https://github.com/your-username/bangla-news-24", // User can easily update
+    githubUrl: "https://github.com/mehedilabs/news-bangla-24", // User can easily update
     tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Bengali Typography", "Media Portal"],
     role: "Frontend Architect & Designer",
     duration: "2024",
